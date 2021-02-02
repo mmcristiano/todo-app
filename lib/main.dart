@@ -1,3 +1,4 @@
+import 'package:app/components/avatar.widget.dart';
 import 'package:app/components/button.widget.dart';
 import 'package:app/themes/app.theme.dart';
 import 'package:flutter/material.dart';
@@ -23,13 +24,25 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Container(
-        child: TDButton(
-          text: "Text",
-          width: 300,
-          image: "assets/images/google.png",
-          callback: () {},
-        ),
+      body: Column(
+        children: <Widget>[
+          SizedBox(
+            height: 40,
+          ),
+          TDButton(
+            text: "Text",
+            width: 300,
+            image: "assets/images/google.png",
+            callback: () {},
+          ),
+          SizedBox(
+            height: 40,
+          ),
+          TDAvatar(
+            path: "https://placehold.it/200",
+            width: 120,
+          )
+        ],
       ),
     );
   }
