@@ -1,4 +1,5 @@
 import 'package:app/themes/app.theme.dart';
+import 'package:app/views/create-todo.view.dart';
 import 'package:app/views/home.view.dart';
 import 'package:app/views/login.view.dart';
 import 'package:flutter/material.dart';
@@ -15,7 +16,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Todos',
       theme: appTheme(),
-      home: HomeView(),
+      home: CreateTodoView(),
     );
   }
 }
